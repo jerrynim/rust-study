@@ -19,11 +19,15 @@ fn main() {
         io::stdin().read_line(&mut guess)
             .expect("Failed to read line");
 
-        let guess: u32 = guess.trim().parse()
-            .expect("Please type a number!");
+        let guess: u32 = match guess.trim().parse() {
+                Ok(num) => num,
+                Err(_) => continue,
+            };
+           
 
         println!("You guessed: {}", guess);
-
+        //match 표현식은 arm으로 이루어져있다
+        //cmp 메소드는 두 값을 비교하며 비교 가능한 모든 것들에 대해 호출할 수 있습니다. 
         match guess.cmp(&secret_number) {
             Ordering::Less    => println!("Too small!"),
             Ordering::Greater => println!("Too big!"),
