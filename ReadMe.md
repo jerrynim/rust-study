@@ -121,3 +121,6 @@ panic!에 응하여 스택을 되감거나 그만두기
 
 [profile.release]
 panic = 'abort'
+
+#[allow(dead_code)]
+never used 경고 제거
