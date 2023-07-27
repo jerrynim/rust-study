@@ -1,13 +1,17 @@
 mod leetcode;
 
 fn main() {
+    //20. Valid Parentheses
+    let answer = leetcode::valid_parentheses::solution(String::from("()[]{}"));
+
     //14. Longest Common Prefix
-    let strings = vec![
-        String::from("flower"),
-        String::from("flow"),
-        String::from("flight"),
-    ];
-    let answer = leetcode::longest_common_prefix::solution(strings);
+    // let strings = vec![
+    //     String::from("flower"),
+    //     String::from("flow"),
+    //     String::from("flight"),
+    // ];
+    // let answer = leetcode::longest_common_prefix::solution(strings);
+
     //13. Roman to Integer
     // let string = String::from("MCMXCIV");
     // let answer = leetcode::roman_to_integer::solution(string);
