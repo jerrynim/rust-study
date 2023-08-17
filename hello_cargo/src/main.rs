@@ -1,8 +1,13 @@
 mod leetcode;
 
 fn main() {
+    //21. Merge Two Sorted Lists
+    let list1 = [1, 2, 4];
+    let list2 = [1, 3, 4];
+    let answer = leetcode::merge_two_lists::solution(list1, list2);
+
     //20. Valid Parentheses
-    let answer = leetcode::valid_parentheses::solution(String::from("()[]{}"));
+    // let answer = leetcode::valid_parentheses::solution(String::from("()[]{}"));
 
     //14. Longest Common Prefix
     // let strings = vec![
